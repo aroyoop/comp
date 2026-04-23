@@ -4,7 +4,7 @@ let caces = {
             "Cool the burn with running water <br>(برد الحرق بالمياه الجارية)",
             "Remove tight items like rings or clothes<br> (شيل أي حاجة ضيقة زي الخواتم أو الملابس)",
             "Cover the burn with a clean cloth <br>(غطي الحرق بقطعة قماش نظيفة)",
-            "Do not apply ice or toothpaste<br> (ما تحطش تلج أو معجون)",
+            "Do not apply ice or toothpaste<br> (ما تحطش تلج أو معجونننن)",
             "Seek medical help if severe <br>(اطلب مساعدة طبية لو الحالة خطيرة)"
         ],
         "Burn First Aid (إسعافات الحروق)",
