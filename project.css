@@ -1,0 +1,157 @@
+
+
+:root {
+    --bg-color: #293f72;
+    --card-bg: #274265;
+    --text-color: #f8fafc;
+    --ambulance-color: #ef4444; 
+    --police-color: #3b82f6;   
+    --fire-color: #f97316;      
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Cairo', sans-serif;
+    color: white;
+
+}
+
+
+header {
+display: block;
+width: 100%;
+display: flex;
+background-color: #183480;
+align-items: center;
+justify-content: space-evenly;
+}
+
+
+header img{
+width: 5%;
+}
+header p {
+color: white;
+font-size: 30px;
+font-weight: bold;
+padding: 10px;
+
+}
+
+header a{
+background-color: #1e3a8a;
+text-decoration: none;
+padding: 10px;
+border-radius: 20px;
+color: wheat;
+font-size: 30px;
+transition: 0.5s;
+}
+
+header a:hover{
+background-color: #6f81b2;
+}
+.emergency-grid {
+    display: flex;
+    gap: 25px;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+        .emergency-card {
+            width: 30%;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255,255,255,0.05);
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+
+
+        .emergency-card:hover{
+            transform:  scale(1.05) translateY(-10px);
+            z-index: 1;
+        }
+
+
+        .emergency-card h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            color: #ff6a00b0;
+
+        }
+
+
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-size: 2.5rem;
+            background: rgba(255,255,255,0.05);
+        }
+
+
+
+        .phone-number {
+            display: inline-block;
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            margin-top: 10px;
+            direction: ltr; 
+        }
+
+        .call-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border: none;
+            transition: 0.5s;
+        }
+
+        .ambulance .call-btn { background: var(--ambulance-color); box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4); }
+        .police .call-btn { background: var(--police-color); box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4); }
+        .fire .call-btn { background: var(--fire-color); box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4); }
+        .gas .call-btn { background: #94a3b8; box-shadow: 0 4px 15px rgba(148, 163, 184, 0.4); }
+        .water .call-btn { background: #0ea5e9; box-shadow: 0 4px 15px rgba(5, 173, 252, 0.889); }
+        .poison .call-btn { background: #10b981; box-shadow: 0 4px 15px rgba(4, 255, 171, 0.679); }
+
+        .call-btn:hover {
+            /* filter: brightness(1.2); */
+            transform: scale(1.05);
+        }
+
+
+
+

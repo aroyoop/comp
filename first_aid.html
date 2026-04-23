@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="index2.css">
+
+</head>
+<body>
+
+
+    <header>
+        <a href="index.html">home</a>
+        <p>Select your emergency situation</p>
+        <img src="pngwing.com (4).png" alt="">
+
+    </header>
+
+
+
+        <div class="select-container">
+        <select id="ui" onchange="show_aid()">
+            <option value="" disabled selected>Select an emergency condition</option>
+            <option value="Burn">Burn</option>
+            <option value="Bleeding">Bleeding</option>
+            <option value="Fracture">Fracture</option>
+            <option value="Heart">Heart attack</option>
+            <option value="Sprain">Sprain/Strain</option>
+        </select>
+        <div id="content" class="content-box">
+            <h1 id="t"></h1>
+            <ol id="ol"></ol>
+            <iframe src="" id="frm"></iframe>
+            <p id="p"> an emergency condition to see the first aid steps.</p>
+        </div>
+    </div>
+
+<script src="project.js"></script>
+
+</body>
+</html>
